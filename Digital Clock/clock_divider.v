@@ -1,7 +1,5 @@
 
 `timescale 1ns / 1ps
-
-
 module Clock_divider(
 input clk,
 input rst,
