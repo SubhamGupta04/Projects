@@ -1,0 +1,59 @@
+`timescale 1ns / 1ps
+
+module Sequence_1001_tb;
+
+   
+    reg clk;
+    reg reset;
+    reg x;
+    wire out;
+
+    
+    Sequence_1001 uut (
+        .clk(clk),
+        .reset(reset),
+        .x(x),
+        .out(out)
+    );
+
+    
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;   
+    end
+
+   
+    initial begin
+        
+        $display("Time\tclk\treset\tx\tout");
+        $monitor("%0t\t%b\t%b\t%b\t%b", $time, clk, reset, x, out);
+
+        
+        reset = 1;
+        x = 0;
+
+        
+        #10 reset = 0;
+
+       
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 0;
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 0;
+        #10 x = 1;
+
+       
+        #10 x = 0;
+        #10 x = 1;
+        #10 x = 0;
+        #10 x = 0;
+        #10 x = 1;
+
+      
+        #20 $finish;
+    end
+
+endmodule
+
