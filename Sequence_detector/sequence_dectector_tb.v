@@ -1,8 +1,6 @@
 `timescale 1ns / 1ps
 
 module Sequence_1001_tb;
-
-   
     reg clk;
     reg reset;
     reg x;
