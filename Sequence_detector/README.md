@@ -48,5 +48,54 @@ The output `out` goes HIGH when the final `1` is received.
 ![Sequence Detector 1001 Waveform](Waveform.png)
 
 
+---
+
+## 🧪 Module Description
+
+### 🔹 `Sequence_1001.v`
+
+**Inputs**
+- `clk`   : Clock signal
+- `reset` : Asynchronous reset (active high)
+- `x`     : Serial input bit stream
+
+**Output**
+- `out`   : Goes HIGH when sequence `1001` is detected
+
+---
+
+## ▶️ Timing Behavior
+- Output `out` is asserted **during the same clock cycle** as the final `1`
+- Reset forces the FSM to the initial state `s0`
+
+---
+
+## 🧪 Tools Used
+- Verilog HDL
+- Vivado Design Suite
+- Artix-7 FPGA (or any FPGA supporting Verilog)
+
+---
+
+## ▶️ How to Simulate
+1. Open **Vivado**
+2. Create a new RTL project
+3. Add `Sequence_1001.v`
+4. Write a testbench to apply serial input
+5. Run behavioral simulation
+
+---
+
+## 📌 Author
+**Subham Gupta**
+
+---
+
+## 📄 License
+This project is intended for **educational and learning purposes**.
+
+
+
+
 
 
