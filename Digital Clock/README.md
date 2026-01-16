@@ -60,5 +60,45 @@ Handles rollover logic correctly.
 
 ---
 
-## 🧩 Block Diagram (Conceptual)
+
+---
+
+## 🧪 Tools Used
+- Verilog HDL
+- Vivado Design Suite
+- Artix-7 FPGA Board
+
+---
+
+## ▶️ How to Run on FPGA
+1. Open **Vivado**
+2. Create a new RTL project
+3. Add Verilog files:
+   - `top.v`
+   - `clock_divider.v`
+   - `time_counter.v`
+   - `seven_seg_driver.v`
+4. Add the `.xdc` constraint file
+5. Run:
+   - Synthesis
+   - Implementation
+   - Generate Bitstream
+6. Program the Artix-7 FPGA board
+
+---
+
+## 🔄 Reset Behavior
+- Reset sets time to **00:00:00**
+- Clock starts counting immediately after reset release
+
+---
+
+## 📌 Author
+**Subham Gupta**
+
+---
+
+## 📄 License
+This project is intended for **educational and academic purposes**.
+
 
