@@ -40,5 +40,13 @@ this a **Mealy FSM**.
 
 Overlapping detection is supported by transitioning back to `s1`.
 
+## 📊 Simulation Waveform
+
+The waveform below shows the detection of the sequence **1001**.
+The output `out` goes HIGH when the final `1` is received.
+
+![Sequence Detector 1001 Waveform](Waveform.png)
+
+
 
 
