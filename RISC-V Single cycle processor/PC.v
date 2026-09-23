@@ -16,5 +16,5 @@ module pc_reg#(parameter WIDTH=32)(
                 pc_out<=pc_next;
     
                 end
-  initial pc_out = 0;                
+                
 endmodule
